@@ -1,0 +1,82 @@
+/* Add some padding and a background color to the form */
+form {
+  padding: 20px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  background-color: #f2f2f2;
+  
+}
+
+/* Style the input fields and button */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Add some hover effects */
+button:hover {
+  background-color: #45a049;
+}
+
+button:active {
+  background-color: #3e8e41;
+}
+
+/* Style the meme container */
+.meme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Style the image and text */
+img {
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Position the top and bottom text */
+h2.top {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  height: 70px;
+  width: 200px;
+}
+
+h2.bottom {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  height: 70px;
+  width: 200px;
+}

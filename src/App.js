@@ -1,25 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState, useEffect } from "react";
+import MemeGenerator from "./meme-generator";
+const App = () => {
+  const [topText, setTopText] = useState("");
+  const [bottomText, setBottomText] = useState("");
+  const [randomImage, setRandomImage] = useState("");
+  const [allMemeImgs, setAllMemeImgs] = useState([]);
 
-function App() {
+  useEffect(() => {
+    async function fetchMemes() {
+      const response = await fetch("https://api.imgflip.com/get_memes");
+      const { data } = await response.json();
+      setAllMemeImgs(data.memes);
+    }
+    fetchMemes();
+  }, []);
+
+  const generateMeme = (event) => {
+    event.preventDefault();
+    const rndIndex = Math.floor(Math.random() * allMemeImgs.length);
+    const url = allMemeImgs[rndIndex].url;
+    setRandomImage(url);
+  };
+
+  const changeTopText = (event) => {
+    setTopText(event.target.value);
+  };
+  const changeBottomText = (event) => {
+    setBottomText(event.target.value);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <MemeGenerator
+        topText={topText}
+        bottomText={bottomText}
+        handleClick={generateMeme}
+        randomImage={randomImage}
+        changeTopText={changeTopText}
+        changeBottomText={changeBottomText}
+      />
     </div>
   );
-}
+};
 
 export default App;

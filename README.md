@@ -1,3 +1,49 @@
+# Meme Generator
+
+A website to generate memes and have fun
+
+## Table of contents
+
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- Generate Meme
+- Add top and bottom text
+
+### Screenshot
+
+![](./screenshot1.png)
+
+### Links
+
+- Solution URL: [Click Me !](https://github.com/emmanueldonkor/meme-generator)
+- Live Site URL: [Click Me !]()
+
+### Built with
+
+- ReactJS
+- CSS
+- Api
+  
+
+## Author
+
+- Website - [Emmanuel Donkor](https://github.com/emmanueldonkor/meme-generator)
+- LinkedIn- [EmmDonkor](https://www.linkedin.com/in/donkoremmanuel/)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -3,7 +3,9 @@ import MemeGenerator from "./meme-generator";
 const App = () => {
   const [topText, setTopText] = useState("");
   const [bottomText, setBottomText] = useState("");
-  const [randomImage, setRandomImage] = useState("");
+  const [randomImage, setRandomImage] = useState(
+    "https://i.imgflip.com/emccr.jpg"
+  );
   const [allMemeImgs, setAllMemeImgs] = useState([]);
 
   useEffect(() => {
@@ -11,6 +13,7 @@ const App = () => {
       const response = await fetch("https://api.imgflip.com/get_memes");
       const { data } = await response.json();
       setAllMemeImgs(data.memes);
+      console.log(data)
     }
     fetchMemes();
   }, []);
@@ -30,7 +33,7 @@ const App = () => {
   };
 
   return (
-    <div className="container">
+    <div className="main-container">
       <MemeGenerator
         topText={topText}
         bottomText={bottomText}

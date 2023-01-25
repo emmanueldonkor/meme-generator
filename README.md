@@ -40,7 +40,7 @@ Users should be able to:
 ## Author
 
 - Website - [Emmanuel Donkor](https://github.com/emmanueldonkor/meme-generator)
-- LinkedIn- [EmmDonkor](https://www.linkedin.com/in/donkoremmanuel/)
+- LinkedIn- [EmmDonkor](https://www.linkedin.com/in/emmanueldonkor/)
 
 
 

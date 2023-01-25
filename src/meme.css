@@ -122,3 +122,37 @@ body{
     transform: translateY(0);
   }
 }
+
+
+@media only screen and (max-width: 600px) {
+.header {
+font-size: 1.5rem;
+}
+.meme {
+width: 500px;
+height: 450px;
+}
+.meme-image{
+  width: 500px;
+  height: 450px;
+}
+.input-text {
+width: 200px;
+height: 30px;
+font-size: 1.25rem;
+
+}
+form{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+.generate-button {
+width: 200px;
+height: 30px;
+font-size: 1.25rem;
+}
+.top, .bottom {
+font-size: 2rem;
+}
+}

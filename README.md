@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Click Me !](https://github.com/emmanueldonkor/meme-generator)
-- Live Site URL: [Click Me !]()
+- Live Site URL: [Click Me !](https://dulcet-melba-b01ea8.netlify.app/)
 
 ### Built with
 
@@ -40,7 +40,7 @@ Users should be able to:
 ## Author
 
 - Website - [Emmanuel Donkor](https://github.com/emmanueldonkor/meme-generator)
-- LinkedIn- [EmmDonkor](https://www.linkedin.com/in/emmanueldonkor/)
+- LinkedIn- [EmmDonkor](https://www.linkedin.com/in/donkor-emmanuel-56b05b219/)
 
 
 
